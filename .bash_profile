@@ -1,0 +1,21 @@
+# Windows aliases
+alias dir='ls'
+alias rmdir='rm -r'
+alias rename='mv'
+alias ren='mv'
+alias del='rm -Rf'
+alias ping='ping -t 4'
+alias ipconfig='ifconfig'
+alias start='open -a'
+alias tasklist='ps -ax'
+alias tasklist-search='ps -ax | grep'
+alias taskkill='kill'
+
+# Mac aliases
+alias showhidden='defaults write com.apple.finder AppleShowAllFiles TRUE'
+alias hidehidden='defaults write com.apple.finder AppleShowAllFiles FALSE'
+alias flushdns='sudo killall -HUP mDNSResponder;say DNS cache has been flushed'
+alias flushdns-yec='sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder; say DNS cache has been flushed'
+alias flushdns-ml='sudo killall -HUP mDNSResponder'
+alias flushdns-sl='sudo dscacheutil -flushcache'
+alias whatismyip='curl -4 https://canihazip.com/s; echo ""'
